@@ -53,4 +53,4 @@ print("Okay, I will start haunting",haunt1 + ",", haunt2 + " and", haunt3 + " at
 
 
 # Scene 2
-#Morning
+# Morning
