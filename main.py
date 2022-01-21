@@ -43,8 +43,13 @@ print("Interesting... My hobby is to haunt bad and rude people.\n")
 # Asking if user wants to scare someone.
 
 
-hauntwish = input ("Do you want me to scare any of your friends,\ntell me their name and I will haunt them until they become good people!\n")
-print("Okay, I will start haunting",hauntwish + " at midnight!\n")
+print("Do you want me to scare any of your friends,\ntell me their name and I will haunt them until they become good people!\n")
+
+haunt1 = input ("Who is the first person you want me to haunt?\n")
+haunt2 = input ("Who is the second person you want me to haunt?\n")
+haunt3 = input ("Who is the third person you want me to haunt?\n")
+
+print("Okay, I will start haunting",haunt1 + ",", haunt2 + " and", haunt3 + " at midnight!\n")
 
 
 # Scene 2
