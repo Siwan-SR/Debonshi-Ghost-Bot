@@ -1,8 +1,9 @@
 # Copyrights Siwan SR 2022. When forking this file please give credits to @SiwanSR   (github) or @TetCode (in Replit). Read copyrights.txt
 
-
+# Adding a narrator in the form of System
 
 # Making a character
+import sys
 
 ghost = 'Debonshi'
 
@@ -31,6 +32,10 @@ if question1 == "1":
 elif question1 == "2":
   print("That's very brave of a", age + " year old. Always stay brave!\n")
 
+else:
+  sys.exit()
+  print("Invalid Input")
+
 # Asking usual questions
 
 favfood = input ("What's your favorite food?\n")
@@ -53,4 +58,5 @@ print("Okay, I will start haunting",haunt1 + ",", haunt2 + " and", haunt3 + " at
 
 
 # Scene 2
-# Morning
+
+print("System: The next day at 9 am.\n")
