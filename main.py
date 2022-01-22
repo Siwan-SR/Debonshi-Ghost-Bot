@@ -21,9 +21,12 @@ print("That's a nice name",name + "!\n")
 
 # Asking age
 
-age = input ("What's your age?\n")
-print("Young Indeed", name + "." )
-
+try:
+  age = int(input ("What's your age?\n"))
+  print("Young Indeed", name)
+except ValueError:
+    print("Please input integer only...")
+    sys.exit()
 # Asking if user is scared of the ghost
 
 question1 = input ("Are you scared of me? I am very scary: 1. I am scared. 2. No I am very brave\n")
