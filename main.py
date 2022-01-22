@@ -55,11 +55,31 @@ else:
 
 # Asking usual questions
 
-favfood = input ("What's your favorite food?\n")
-print("Oh my favorite food is also",favfood + " and beef chops\n")
+favfood = input
 
-hobbies = input ("Don't mind me asking but what's your hobby?\n")
-print("Interesting... My hobby is to haunt bad and rude people.\n")
+while(not(favfood == "")):
+    favfood = input("What's your favorite food?\n")
+    if not re.match("^[a-z]*$", favfood):
+        print("Only letters are allowed")
+        sys.exit()
+    elif len(favfood) == 0:
+        print("Insufficient characters.")
+        sys.exit()
+    else:
+        favfood.append(favfood)
+
+hobbies = input 
+
+while(not(hobbies == "")):
+    hobbies = input("What's your favorite food?\n")
+    if not re.match("^[a-z]*$", hobbies):
+        print("Only letters are allowed")
+        sys.exit()
+    elif len(hobbies) == 0:
+        print("Insufficient characters.")
+        sys.exit()
+    else:
+        hobbies.append(hobbies)
 
 
 # Asking if user wants to scare someone.
