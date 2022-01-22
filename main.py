@@ -1,4 +1,5 @@
 import sys
+import re
 
 # Creating System
 
@@ -12,12 +13,23 @@ ghost = 'Debonshi'
 print("Hello, I am", ghost)
 print("I am a ghost! A friendly ghost")
 
+
 #Scene 1
 
 # Asking Name
 
-name = input ("What's your name human?\n")
-print("That's a nice name",name + "!\n")
+name = input 
+
+while(not(name == "")):
+    name = input("What is your name human?\n")
+    if not re.match("^[a-z]*$", name):
+        print("Only letters are allowed")
+        sys.exit()
+    elif len(name) == 0:
+        print("Insufficient characters.")
+        sys.exit()
+    else:
+        name.append(name)
 
 # Asking age
 
@@ -25,7 +37,7 @@ try:
   age = int(input ("What's your age?\n"))
   print("Young Indeed", name)
 except ValueError:
-    print("Please input integer only...")
+    print("Please enter a number.")
     sys.exit()
 # Asking if user is scared of the ghost
 
