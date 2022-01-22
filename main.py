@@ -1,9 +1,12 @@
-# Copyrights Siwan SR 2022. When forking this file please give credits to @SiwanSR   (github) or @TetCode (in Replit). Read copyrights.txt
+import sys
 
+# Creating System
 
+system = 'System'
 
-# Making a character
+# Making characters
 
+user = 'Me'
 ghost = 'Debonshi'
 
 print("Hello, I am", ghost)
@@ -31,6 +34,10 @@ if question1 == "1":
 elif question1 == "2":
   print("That's very brave of a", age + " year old. Always stay brave!\n")
 
+else:
+  sys.exit()
+  print("Invalid Input")
+
 # Asking usual questions
 
 favfood = input ("What's your favorite food?\n")
@@ -43,14 +50,27 @@ print("Interesting... My hobby is to haunt bad and rude people.\n")
 # Asking if user wants to scare someone.
 
 
-print("Do you want me to scare any of your friends,\ntell me their name and I will haunt them until they become good people!\n")
+wish1 = input ("Do you want me to scare any of your friends,\ntell me their name and I will haunt them until they become good people! 1. Yes. 2.No\n")
 
-haunt1 = input ("Who is the first person you want me to haunt?\n")
-haunt2 = input ("Who is the second person you want me to haunt?\n")
-haunt3 = input ("Who is the third person you want me to haunt?\n")
+if wish1 == "1":
 
-print("Okay, I will start haunting",haunt1 + ",", haunt2 + " and", haunt3 + " at midnight!\n")
+  haunt1 = input ("Who is the first person you want me to haunt?\n")
+  haunt2 = input ("Who is the second person you want me to haunt?\n")
+  haunt3 = input ("Who is the third person you want me to haunt?\n")
+  
+  print("Okay, I will start haunting",haunt1 + ",", haunt2 + " and", haunt3 + " at midnight!\n")
+  hauntlist = haunt1, haunt2, haunt3
+
+elif wish1 == "2":
+  print("Okay I won't scare anyone!")
+
+
 
 
 # Scene 2
 
+print(system + ": The next day at 9 pm.\n")
+
+print(user + ": I wonder if",ghost + " scared", hauntlist)
+
+print("Hello",name + ", last night I scared your friends, like a lot. Eh.. might have broken a few things, but let's not get into it here.")
