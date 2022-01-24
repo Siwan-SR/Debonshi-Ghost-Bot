@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import sys
 from termcolor import colored
 from colorama import init, Fore, Back, Style
@@ -86,6 +87,8 @@ print("Okay, I will start haunting",haunt1 + ",", haunt2 + " and", haunt3 + " at
 
 
 # Scene 2
+=======
+>>>>>>> origin/main
 
 print(system + ": The next day at 9 am.\n")
 
